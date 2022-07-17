@@ -1,0 +1,505 @@
+<!--Теги Форм-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<title>2 Проект</title>
+</head>
+
+<body>
+	<!--! Wrapper - общая оболочка. ЧТобы не появлялся горизонтальный скролл при отрицательных отсутпах, в .wrpapper добавляем overflow hidden. Если добавил это для body - не сможем скролить -->
+	<div class="wrapper">
+		<!-- Header - надвисает, поэтому не относится к первому блоку -->
+		<header class="header">
+			<div class="header__container _container">
+				<div class="header__logo">Relvise</div>
+				<nav class="header__menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="" class="menu__link" data-scroll='#home'>Home</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link" data-scroll='#product'>Product</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link" data-scroll='#about'>About</a>
+						</li>
+						<li class="menu__item">
+							<a href="" class="menu__link" data-scroll='#footer'>Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!-- Контент -->
+		<!--------------------------------------- 1 блок-------------------------------------------- -->
+		<main class="page" id="home">
+			<div class="page_main-block main-block">
+				<div class="main-block__container _container">
+					<!-- Флекс структура -->
+					<!-- В body будем задавать отступы блока, чтобы фоновая картинка расширилась -->
+					<div class="main-block__body">
+						<h1 class="main-block__title">Finance and Consultancy Solution</h1>
+						<div class="main-block__text">We know how large objects will act, but things on a small scale.</div>
+						<div class="main-block__buttons">
+							<a href="" class="main-block__button main-block__button_orange">Get Quote Now</a>
+							<a href="" class="main-block__button main-block__button_border">Learn More</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-block__image _ibg">
+					<img src="img/mainblock/6zfek42kki9r0uenzywrnnwipuahzivo.jpg" alt="cover">
+				</div>
+			</div>
+		</main>
+		<!--------------------------------------- 2 блок-------------------------------------------- -->
+		<!--! Добавляем section тогда , когда есть заголовки -->
+		<section class="page__services services">
+			<div class="services__container _container">
+				<!-- Флекс структура -->
+				<div class="services__body">
+					<!-- 1 объект -->
+					<div class="services__column">
+						<div class="services__item item-services">
+							<div class="item-services__icon">
+								<img src="img/services/01.svg" alt="&&&&&&&">
+							</div>
+							<h3 class="item-services__title">Environmental Consulting</h3>
+							<div class="item-services__text">We focus on ergonomics and meeting you where you work. </div>
+						</div>
+					</div>
+					<!-- 2 объект --------->
+					<div class="services__column">
+						<div class="services__item item-services">
+							<div class="item-services__icon">
+								<img src="img/services/02.svg" alt="&&&&&&&">
+							</div>
+							<h3 class="item-services__title">Finance and consultancy </h3>
+							<div class="item-services__text">Just type what's on your mind and we'll get you there. </div>
+						</div>
+					</div>
+					<!-- 3 объект -->
+					<div class="services__column">
+						<div class="services__item item-services item-services-green">
+							<div class="item-service__icon">
+								<img src="img/services/03.svg" alt="&&&&&&&">
+							</div>
+							<h3 class="item-services__title">Financial Services Consulting</h3>
+							<div class="item-services__text">the quick fox jumps over the lazy dog </div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!--------------------------------------- 3 блок-------------------------------------------- -->
+		<section class="pade__achievements" id="product">
+			<div class="achievements__container _container">
+				<!-- header-block сделали так как он будет потом повторяться -->
+				<div class="achievements__header header-block">
+					<h2 class="header-block__title">Designing Better Experience</h2>
+					<div class="header-block__subtitle">Problems trying to resolve the conflict between the two major
+						realms <br> of Classical physics: Newtonian mechanics </div>
+				</div>
+				<!-- Для блока отступ задавать нельзя, а для модификатора - можно -->
+				<div class="achievements__body">
+					<div class="achievements__column">
+						<div class="achievements__item">
+							<div class="achievements__icon">
+								<img src="img/achievements/01.svg" alt="!!!!!!!!!!!!">
+							</div>
+							<div class="achievements__value">972 +</div>
+							<div class="achievements__text">Consumer Products </div>
+						</div>
+					</div>
+					<div class="achievements__column">
+						<div class="achievements__item">
+							<div class="achievements__icon">
+								<img src="img/achievements/02.svg" alt="!!!!!!!!!!!!">
+							</div>
+							<div class="achievements__value">181 +</div>
+							<div class="achievements__text">Financial Services </div>
+						</div>
+					</div>
+					<div class="achievements__column">
+						<div class="achievements__item">
+							<div class="achievements__icon">
+								<img src="img/achievements/03.svg" alt="!!!!!!!!!!!!">
+							</div>
+							<div class="achievements__value">98%</div>
+							<div class="achievements__text">Environmental </div>
+						</div>
+					</div>
+					<div class="achievements__column">
+						<div class="achievements__item">
+							<div class="achievements__icon">
+								<img src="img/achievements/04.svg" alt="!!!!!!!!!!!!">
+							</div>
+							<div class="achievements__value">746 +</div>
+							<div class="achievements__text">Business & Finance </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--------------------------------------- 4 блок-------------------------------------------- -->
+		<section class="page__practice practice">
+			<div class="practice__container _container">
+				<div class="practice__header header-block">
+					<h2 class="header-block__title">Practice Advice</h2>
+					<div class="header-block__subtitle">Problems trying to resolve the conflict between the two major
+						realms of
+						Classical physics: Newtonian mechanics </div>
+				</div>
+				<div class="practice__body">
+					<div class="practice__column">
+						<article class="practice__item item-practice">
+							<div class="item-practice__content">
+								<a href="" class="item-practice__link">
+									<h4 class="item-practice__title">A single source of truth</h4>
+								</a>
+								<div class="item-practice__text">
+									Newton thought that light was made up of particles, but then it was discovered
+								</div>
+							</div>
+							<a class="item-practice__image _ibg">
+								<img src="img/practice/01.jpg" alt="A single source of truth">
+							</a>
+						</article>
+					</div>
+					<div class="practice__column">
+						<article class="practice__item item-practice">
+							<div class="item-practice__content">
+								<a href="" class="item-practice__link">
+									<h4 class="item-practice__title">Fastest way to take action</h4>
+								</a>
+								<div class="item-practice__text">
+									“Quantum mechanics” is the description of the behaviour of matter
+								</div>
+							</div>
+							<a class="item-practice__image _ibg">
+								<img src="img/practice/02.jpg" alt="A single source of truth">
+							</a>
+						</article>
+					</div>
+					<div class="practice__column">
+						<article class="practice__item item-practice">
+							<div class="item-practice__content">
+								<a href="" class="item-practice__link">
+									<h4 class="item-practice__title">Fastest way to take action</h4>
+								</a>
+								<div class="item-practice__text">
+									They describe a universe consisting of bodies moving
+								</div>
+							</div>
+							<a class="item-practice__image _ibg">
+								<img src="img/practice/03.jpg" alt="A single source of truth">
+							</a>
+						</article>
+					</div>
+					<div class="practice__column">
+						<article class="practice__item item-practice">
+							<div class="item-practice__content">
+								<a href="" class="item-practice__link">
+									<h4 class="item-practice__title">Work better together</h4>
+								</a>
+								<div class="item-practice__text">
+									They finally obtained a consistent description of the behaviour
+								</div>
+							</div>
+							<a class="item-practice__image _ibg">
+								<img src="img/practice/04.jpg" alt="A single source of truth">
+							</a>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--------------------------------------- 5 блок-------------------------------------------- -->
+		<section class="page__howeare howeare" id="about">
+			<div class="howeare__container _container">
+				<div class="howeare__header header-block">
+					<h2 class="header-block__title">Who We Are</h2>
+					<div class="header-block__subtitle">Problems trying to resolve the conflict between the two major
+						realms of
+						Classical physics: Newtonian mechanics </div>
+				</div>
+				<div class="howeare__body">
+					<div class="howeare__video">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<div class="howeare__content">
+						<div class="howeare__top">
+							<h2 class="howeare__title">Most trusted in our field</h2>
+							<div class="howeare__text">Most calendars are designed for teams. Slate is designed for
+								freelancers
+								who want a simple way to plan their schedule.</div>
+						</div>
+						<div class="howeare__items">
+							<div class="howeare__item item-whoweare">
+								<div class="item-whoweare__icon">
+									<img src="img/whoweare/1-Vector.svg" alt="123212112">
+								</div>
+								<div class="item-whoweare__body">
+									<div class="item-whoweare__title">the quick fox jumps over the lazy dog</div>
+									<div class="item-whoweare__text">Things on a very small scale ...</div>
+								</div>
+							</div>
+							<div class="howeare__item item-whoweare">
+								<div class="item-whoweare__icon">
+									<img src="img/whoweare/2Vector.svg" alt="123212112">
+								</div>
+								<div class="item-whoweare__body">
+									<div class="item-whoweare__title">the quick fox jumps over the lazy dog</div>
+									<div class="item-whoweare__text">Things on a very small scale ...</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--------------------------------------- 6 блок-------------------------------------------- -->
+		<div class="page__clients clients">
+			<div class="clients__container _container">
+				<div class="clients__items">
+					<div class="clients__item">
+						<img src="img/clients/Vector.png" alt="brtaetavreg">
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/Vector1.png" alt="brtaetavreg">
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/Vector2.png" alt="brtaetavreg">
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/Vector3.png" alt="brtaetavreg">
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/Vector4.png" alt="brtaetavreg">
+					</div>
+					<div class="clients__item">
+						<img src="img/clients/Vector5.png" alt="brtaetavreg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--   Блок 7 .............................................................................  -->
+		<secton class="page__subscribe subscribe">
+			<div class="subscribe__container _container">
+				<div class="subscribe__body">
+					<h4 class="subscribe__tilte">Subscribe For Latest Newsletter</h4>
+					<form action="#" class="subscribe__form">
+						<!-- Тип email решает то что будет email , а required - проверка email -->
+						<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
+							class="subscribe__input">
+						<button type="submit" class="subscribe__button">Subscribe </button>
+					</form>
+				</div>
+			</div>
+		</secton>
+		<!-------------------------------------------------- 8 Блок -------------------------------------------------->
+		<section class="page__get-in-touch get-in-touch">
+			<div class="get-in-touch__container _container">
+				<div class="get-in-touch__header header-block">
+					<h2 class="header-block__title">Get In Touch</h2>
+					<div class="header-block__subtitle">Problems trying to resolve the conflict between <br> the two major
+						realms of Classical physics: Newtonian mechanics </div>
+				</div>
+				<div class="get-in-touch__body">
+					<div class="get-in-touch__items">
+						<!---------------------------- 1 элемент ------------------------>
+						<div class="get-in-touch__item item-get-in-touch">
+							<div class="item-get-in-touch__icon">
+								<img src="img/Get In Touch/Get In Touch1.svg" alt="dgfeabtrs">
+							</div>
+							<div class="item-get-in-touch__emails">
+								<a href="mailto:georgia.young@example.com"
+									class="item-get-in-touch__email">georgia.young@example.com</a>
+								<a href="mailto:georgia.young@ple.com"
+									class="item-get-in-touch__email">georgia.young@ple.com</a>
+							</div>
+							<div class="item-get-in-touch__label">Get Support</div>
+							<div class="item-get-in-touch__button">Submit Request</div>
+						</div>
+						<!---------------------------- 2 элемент ------------------------>
+						<div class="get-in-touch__item item-get-in-touch item-get-in-touch_active">
+							<div class="item-get-in-touch__icon">
+								<img src="img/Get In Touch/Get In Touch2.svg" alt="dgfeabtrs">
+							</div>
+							<div class="item-get-in-touch__emails">
+								<a href="mailto:georgia.young@example.com"
+									class="item-get-in-touch__email-b">georgia.young@example.com</a>
+								<a href="mailto:georgia.young@ple.com"
+									class="item-get-in-touch__email-b">georgia.young@ple.com</a>
+							</div>
+							<div class="item-get-in-touch__label-b">Get Support</div>
+							<div class="item-get-in-touch__button-b">Submit Request</div>
+						</div>
+						<!---------------------------- 3 элемент ------------------------>
+						<div class="get-in-touch__item item-get-in-touch">
+							<div class="item-get-in-touch__icon">
+								<img src="img/Get In Touch/Get In Touch3.svg" alt="dgfeabtrs">
+							</div>
+							<div class="item-get-in-touch__emails">
+								<a href="mailto:georgia.young@example.com"
+									class="item-get-in-touch__email">georgia.young@example.com</a>
+								<a href="mailto:georgia.young@ple.com"
+									class="item-get-in-touch__email">georgia.young@ple.com</a>
+							</div>
+							<div class="item-get-in-touch__label">Get Support</div>
+							<div class="item-get-in-touch__button">Submit Request</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!---------------------------------------------- 9 Блок ----------------------------------------------->
+		<!-- consulting не ограничен conteiner, поэтому его применяют. Работа над контейнером -->
+		<section class="page__consulting consulting">
+			<div class="consulting__container _container">
+				<div class="consulting__body">
+					<div class="consulting__content">
+						<h4 class="consulting__title">Consulting Agency For Your Business</h4>
+						<div class="consulting__text">the quick fox jumps over the lazy dog</div>
+					</div>
+					<a href="" class="consulting__button">Contact Us</a>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!--------------------------------------- footer-------------------------------------------- -->
+	<footer class="footer" id="footer">
+		<!---------------------------------------------- Верхняя часть ----------------------------------------------->
+		<div class="footer__top">
+			<div class="footer__main _container">
+				<div class="footer__row">
+					<!--------------------------------- 1 Элемент -------------------------------->
+					<div class="footer__column">
+						<div class="footer__label">Company Info</div>
+						<div class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">About Us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Carrier</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">We are hiring</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Blog</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--------------------------------- 2 Элемент -------------------------------->
+					<div class="footer__column">
+						<div class="footer__label">Legal</div>
+						<div class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">About Us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Carrier</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">We are hiring</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Blog</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--------------------------------- 3 Элемент -------------------------------->
+					<div class="footer__column">
+						<div class="footer__label">Features</div>
+						<div class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Business Marketing</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">User Analytic</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Live Chat</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Unlimited Support</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--------------------------------- 4 Элемент -------------------------------->
+					<div class="footer__column">
+						<div class="footer__label">Resources</div>
+						<div class="footer__menu menu-footer">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">IOS & Android</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Watch a Demo</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">Customers</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="" class="menu-footer__link">API</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--------------------------------- 5 Элемент -------------------------------->
+					<div class="footer__column">
+						<div class="footer__label">Get In Touch</div>
+						<div class="footer__contacts contacts-footer">
+
+							<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480)
+								555-0103</a>
+							<a href="" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave.</a>
+							<a href="mailto:debra.holt@example.com"
+								class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------------------------- Нижняя часть ----------------------------------------------->
+		<div class="footer__bottom">
+			<div class="footer__container _container">
+				<div class="footer__copy">
+					Made With Love By Figmaland All Right Reserved
+				</div>
+				<div class="footer__social social">
+					<a href="" class="social__item"><img src="img/footer/s1.svg" alt="wewqewq"></a>
+					<a href="" class="social__item"><img src="img/footer/s2.svg" alt="wewqewq"></a>
+					<a href="" class="social__item"><img src="img/footer/s3.svg" alt="wewqewq"></a>
+					<a href="" class="social__item"><img src="img/footer/s4n.svg" alt="wewqewq"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
