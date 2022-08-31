@@ -1,4 +1,3 @@
-<!--Теги Форм-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,35 +9,32 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,800;1,600&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
-	<title>2 Проект</title>
+	<title>Consult</title>
 </head>
 
 <body>
-	<!--! Wrapper - общая оболочка. ЧТобы не появлялся горизонтальный скролл при отрицательных отсутпах, в .wrpapper добавляем overflow hidden. Если добавил это для body - не сможем скролить -->
 	<div class="wrapper">
-		<!-- Header - надвисает, поэтому не относится к первому блоку -->
 		<header class="header">
 			<div class="header__container _container">
-				<div class="header__logo">Relvise</div>
+				<div class="header__logo">Consult</div>
 				<nav class="header__menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="" class="menu__link" data-scroll='#home'>Home</a>
+							<a href="" class="menu__link" data-scroll='#indicators'>Показатели</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link" data-scroll='#product'>Product</a>
+							<a href="" class="menu__link" data-scroll='#product'>Услуги</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link" data-scroll='#about'>About</a>
+							<a href="" class="menu__link" data-scroll='#about'>О нас</a>
 						</li>
 						<li class="menu__item">
-							<a href="" class="menu__link" data-scroll='#footer'>Contact</a>
+							<a href="" class="menu__link" data-scroll='#footer'>Контакты</a>
 						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<!-- Контент -->
 		<!--------------------------------------- 1 блок-------------------------------------------- -->
 		<main class="page" id="home">
 			<div class="page_main-block main-block">
@@ -46,11 +42,12 @@
 					<!-- Флекс структура -->
 					<!-- В body будем задавать отступы блока, чтобы фоновая картинка расширилась -->
 					<div class="main-block__body">
-						<h1 class="main-block__title">Finance and Consultancy Solution</h1>
-						<div class="main-block__text">We know how large objects will act, but things on a small scale.</div>
+						<h1 class="main-block__title">Консалтинговые услуги</h1>
+						<div class="main-block__text">Комплексная защита и эффективное развитие вашего бизнеса</div>
 						<div class="main-block__buttons">
-							<a href="" class="main-block__button main-block__button_orange">Get Quote Now</a>
-							<a href="" class="main-block__button main-block__button_border">Learn More</a>
+							<a href="" class="main-block__button main-block__button_orange">Оставить заявку</a>
+							<a href="" class="main-block__button main-block__button_border"
+								data-scroll='#product'>Подробнее</a>
 						</div>
 					</div>
 				</div>
@@ -71,8 +68,9 @@
 							<div class="item-services__icon">
 								<img src="img/services/01.svg" alt="&&&&&&&">
 							</div>
-							<h3 class="item-services__title">Environmental Consulting</h3>
-							<div class="item-services__text">We focus on ergonomics and meeting you where you work. </div>
+							<h3 class="item-services__title">Экологический консалтинг</h3>
+							<div class="item-services__text">Мы сосредотачиваемся на эргономике и встрече с вами там, где вы
+								работаете. </div>
 						</div>
 					</div>
 					<!-- 2 объект --------->
@@ -81,8 +79,8 @@
 							<div class="item-services__icon">
 								<img src="img/services/02.svg" alt="&&&&&&&">
 							</div>
-							<h3 class="item-services__title">Finance and consultancy </h3>
-							<div class="item-services__text">Just type what's on your mind and we'll get you there. </div>
+							<h3 class="item-services__title">Финансы и консультации </h3>
+							<div class="item-services__text">Расскажите о о ваш видении бизнеса и мы доставим вас туда. </div>
 						</div>
 					</div>
 					<!-- 3 объект -->
@@ -91,8 +89,9 @@
 							<div class="item-service__icon">
 								<img src="img/services/03.svg" alt="&&&&&&&">
 							</div>
-							<h3 class="item-services__title">Financial Services Consulting</h3>
-							<div class="item-services__text">the quick fox jumps over the lazy dog </div>
+							<h3 class="item-services__title">Бесплатные консультации</h3>
+							<div class="item-services__text">Абсолютно любая консультация в нашей компании для вас бесплатна.
+							</div>
 						</div>
 					</div>
 
@@ -101,13 +100,12 @@
 		</section>
 
 		<!--------------------------------------- 3 блок-------------------------------------------- -->
-		<section class="pade__achievements" id="product">
+		<section class="pade__achievements" id="indicators">
 			<div class="achievements__container _container">
 				<!-- header-block сделали так как он будет потом повторяться -->
 				<div class="achievements__header header-block">
-					<h2 class="header-block__title">Designing Better Experience</h2>
-					<div class="header-block__subtitle">Problems trying to resolve the conflict between the two major
-						realms <br> of Classical physics: Newtonian mechanics </div>
+					<h2 class="header-block__title">Нааши показатели</h2>
+					<div class="header-block__subtitle">Наша главная цель - помогать бизнесу на пути его развития</div>
 				</div>
 				<!-- Для блока отступ задавать нельзя, а для модификатора - можно -->
 				<div class="achievements__body">
@@ -116,8 +114,8 @@
 							<div class="achievements__icon">
 								<img src="img/achievements/01.svg" alt="!!!!!!!!!!!!">
 							</div>
-							<div class="achievements__value">972 +</div>
-							<div class="achievements__text">Consumer Products </div>
+							<div class="achievements__value">1000+</div>
+							<div class="achievements__text">Клиентов</div>
 						</div>
 					</div>
 					<div class="achievements__column">
@@ -125,8 +123,8 @@
 							<div class="achievements__icon">
 								<img src="img/achievements/02.svg" alt="!!!!!!!!!!!!">
 							</div>
-							<div class="achievements__value">181 +</div>
-							<div class="achievements__text">Financial Services </div>
+							<div class="achievements__value">15+</div>
+							<div class="achievements__text">Направлений</div>
 						</div>
 					</div>
 					<div class="achievements__column">
@@ -134,8 +132,8 @@
 							<div class="achievements__icon">
 								<img src="img/achievements/03.svg" alt="!!!!!!!!!!!!">
 							</div>
-							<div class="achievements__value">98%</div>
-							<div class="achievements__text">Environmental </div>
+							<div class="achievements__value">23+</div>
+							<div class="achievements__text">Номинаций</div>
 						</div>
 					</div>
 					<div class="achievements__column">
@@ -143,8 +141,8 @@
 							<div class="achievements__icon">
 								<img src="img/achievements/04.svg" alt="!!!!!!!!!!!!">
 							</div>
-							<div class="achievements__value">746 +</div>
-							<div class="achievements__text">Business & Finance </div>
+							<div class="achievements__value">10 +</div>
+							<div class="achievements__text">Лет на рынке</div>
 						</div>
 					</div>
 				</div>
@@ -152,27 +150,26 @@
 		</section>
 
 		<!--------------------------------------- 4 блок-------------------------------------------- -->
-		<section class="page__practice practice">
+		<section class="page__practice practice" id="product">
 			<div class="practice__container _container">
 				<div class="practice__header header-block">
-					<h2 class="header-block__title">Practice Advice</h2>
-					<div class="header-block__subtitle">Problems trying to resolve the conflict between the two major
-						realms of
-						Classical physics: Newtonian mechanics </div>
+					<h2 class="header-block__title">Наши услуги</h2>
+					<div class="header-block__subtitle">Мы специализируемся на консалтинговых услугах и аутсорсинге
+						бизнес-процессов бухгалтерии, юридической поддержки, маркетинга, кадрового обеспечения.</div>
 				</div>
 				<div class="practice__body">
 					<div class="practice__column">
 						<article class="practice__item item-practice">
 							<div class="item-practice__content">
 								<a href="" class="item-practice__link">
-									<h4 class="item-practice__title">A single source of truth</h4>
+									<h4 class="item-practice__title">Маркетинговые услуги</h4>
 								</a>
 								<div class="item-practice__text">
-									Newton thought that light was made up of particles, but then it was discovered
+									Полный комплекс для маркетинга и продвижения бизнеса
 								</div>
 							</div>
 							<a class="item-practice__image _ibg">
-								<img src="img/practice/01.jpg" alt="A single source of truth">
+								<img src="img/practice/1.svg" alt="A single source of truth">
 							</a>
 						</article>
 					</div>
@@ -180,14 +177,14 @@
 						<article class="practice__item item-practice">
 							<div class="item-practice__content">
 								<a href="" class="item-practice__link">
-									<h4 class="item-practice__title">Fastest way to take action</h4>
+									<h4 class="item-practice__title">Юридические услуги</h4>
 								</a>
 								<div class="item-practice__text">
-									“Quantum mechanics” is the description of the behaviour of matter
+									Надежно и профессионально. Предупредим риски
 								</div>
 							</div>
 							<a class="item-practice__image _ibg">
-								<img src="img/practice/02.jpg" alt="A single source of truth">
+								<img src="img/practice/2.svg" alt="A single source of truth">
 							</a>
 						</article>
 					</div>
@@ -195,14 +192,14 @@
 						<article class="practice__item item-practice">
 							<div class="item-practice__content">
 								<a href="" class="item-practice__link">
-									<h4 class="item-practice__title">Fastest way to take action</h4>
+									<h4 class="item-practice__title">Управленческий консалтинг</h4>
 								</a>
 								<div class="item-practice__text">
-									They describe a universe consisting of bodies moving
+									Помогаем развивать бизнес
 								</div>
 							</div>
 							<a class="item-practice__image _ibg">
-								<img src="img/practice/03.jpg" alt="A single source of truth">
+								<img src="img/practice/3.svg" alt="A single source of truth">
 							</a>
 						</article>
 					</div>
@@ -210,14 +207,14 @@
 						<article class="practice__item item-practice">
 							<div class="item-practice__content">
 								<a href="" class="item-practice__link">
-									<h4 class="item-practice__title">Work better together</h4>
+									<h4 class="item-practice__title">Аудиторские услуги</h4>
 								</a>
 								<div class="item-practice__text">
-									They finally obtained a consistent description of the behaviour
+									Считаем, проверяем, управляем налоговыми рисками
 								</div>
 							</div>
 							<a class="item-practice__image _ibg">
-								<img src="img/practice/04.jpg" alt="A single source of truth">
+								<img src="img/practice/4.svg" alt="A single source of truth">
 							</a>
 						</article>
 					</div>
@@ -228,24 +225,24 @@
 		<section class="page__howeare howeare" id="about">
 			<div class="howeare__container _container">
 				<div class="howeare__header header-block">
-					<h2 class="header-block__title">Who We Are</h2>
-					<div class="header-block__subtitle">Problems trying to resolve the conflict between the two major
-						realms of
-						Classical physics: Newtonian mechanics </div>
+					<h2 class="header-block__title">О нас</h2>
+					<div class="header-block__subtitle">Мы всегда готовы оказать Вам профессиональную поддержку во всем, что
+						касается маркетинга, бухгалтерии, финансов, юридической безопасности, кадров и развития, аутсорсинга
+						бизнес-процессов.</div>
 				</div>
 				<div class="howeare__body">
 					<div class="howeare__video">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E"
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/nyGCaUPWBNc"
 							title="YouTube video player" frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen></iframe>
 					</div>
 					<div class="howeare__content">
 						<div class="howeare__top">
-							<h2 class="howeare__title">Most trusted in our field</h2>
-							<div class="howeare__text">Most calendars are designed for teams. Slate is designed for
-								freelancers
-								who want a simple way to plan their schedule.</div>
+							<h2 class="howeare__title">Почему нам доверяют?</h2>
+							<div class="howeare__text">Наша команда включает специалистов самой разной направленности - от
+								бухгалтерии до маркетинга. И нам очень хочется стать полезными для Вашего бизнеса, помочь его
+								развитию.</div>
 						</div>
 						<div class="howeare__items">
 							<div class="howeare__item item-whoweare">
@@ -253,8 +250,8 @@
 									<img src="img/whoweare/1-Vector.svg" alt="123212112">
 								</div>
 								<div class="item-whoweare__body">
-									<div class="item-whoweare__title">the quick fox jumps over the lazy dog</div>
-									<div class="item-whoweare__text">Things on a very small scale ...</div>
+									<div class="item-whoweare__title">Поддерживаем малый и средний бизнес России</div>
+									<div class="item-whoweare__text">Организовываем мероприятия для предпринимателей</div>
 								</div>
 							</div>
 							<div class="howeare__item item-whoweare">
@@ -262,8 +259,8 @@
 									<img src="img/whoweare/2Vector.svg" alt="123212112">
 								</div>
 								<div class="item-whoweare__body">
-									<div class="item-whoweare__title">the quick fox jumps over the lazy dog</div>
-									<div class="item-whoweare__text">Things on a very small scale ...</div>
+									<div class="item-whoweare__title">Используем сисетмный подход</div>
+									<div class="item-whoweare__text">Новые решения строим на основе успешного опыта</div>
 								</div>
 							</div>
 						</div>
@@ -301,12 +298,12 @@
 		<secton class="page__subscribe subscribe">
 			<div class="subscribe__container _container">
 				<div class="subscribe__body">
-					<h4 class="subscribe__tilte">Subscribe For Latest Newsletter</h4>
+					<h4 class="subscribe__tilte">Получить консультацию</h4>
 					<form action="#" class="subscribe__form">
 						<!-- Тип email решает то что будет email , а required - проверка email -->
-						<input autocomplete="off" type="email" required name="form[]" placeholder="Your Email"
+						<input autocomplete="off" type="email" required name="form[]" placeholder="Ваш Email..."
 							class="subscribe__input">
-						<button type="submit" class="subscribe__button">Subscribe </button>
+						<button type="submit" class="subscribe__button">Отправить</button>
 					</form>
 				</div>
 			</div>
@@ -315,9 +312,9 @@
 		<section class="page__get-in-touch get-in-touch">
 			<div class="get-in-touch__container _container">
 				<div class="get-in-touch__header header-block">
-					<h2 class="header-block__title">Get In Touch</h2>
-					<div class="header-block__subtitle">Problems trying to resolve the conflict between <br> the two major
-						realms of Classical physics: Newtonian mechanics </div>
+					<h2 class="header-block__title">Как связаться с нами?</h2>
+					<div class="header-block__subtitle">Абсолютно любая консультация в нашей компании для вас бесплатна.
+						Нужна профессиональная помощь?</div>
 				</div>
 				<div class="get-in-touch__body">
 					<div class="get-in-touch__items">
@@ -328,12 +325,12 @@
 							</div>
 							<div class="item-get-in-touch__emails">
 								<a href="mailto:georgia.young@example.com"
-									class="item-get-in-touch__email">georgia.young@example.com</a>
+									class="item-get-in-touch__email">Consult.com</a>
 								<a href="mailto:georgia.young@ple.com"
-									class="item-get-in-touch__email">georgia.young@ple.com</a>
+									class="item-get-in-touch__email">Consult.com</a>
 							</div>
-							<div class="item-get-in-touch__label">Get Support</div>
-							<div class="item-get-in-touch__button">Submit Request</div>
+							<div class="item-get-in-touch__label">Получить поддержку</div>
+							<div class="item-get-in-touch__button">Отправить запрос</div>
 						</div>
 						<!---------------------------- 2 элемент ------------------------>
 						<div class="get-in-touch__item item-get-in-touch item-get-in-touch_active">
@@ -342,12 +339,12 @@
 							</div>
 							<div class="item-get-in-touch__emails">
 								<a href="mailto:georgia.young@example.com"
-									class="item-get-in-touch__email-b">georgia.young@example.com</a>
+									class="item-get-in-touch__email-b">Consult@example.com</a>
 								<a href="mailto:georgia.young@ple.com"
-									class="item-get-in-touch__email-b">georgia.young@ple.com</a>
+									class="item-get-in-touch__email-b">Consult@ple.com</a>
 							</div>
-							<div class="item-get-in-touch__label-b">Get Support</div>
-							<div class="item-get-in-touch__button-b">Submit Request</div>
+							<div class="item-get-in-touch__label-b">Записаться на встречу</div>
+							<div class="item-get-in-touch__button-b">Отправить запрос</div>
 						</div>
 						<!---------------------------- 3 элемент ------------------------>
 						<div class="get-in-touch__item item-get-in-touch">
@@ -356,27 +353,27 @@
 							</div>
 							<div class="item-get-in-touch__emails">
 								<a href="mailto:georgia.young@example.com"
-									class="item-get-in-touch__email">georgia.young@example.com</a>
+									class="item-get-in-touch__email">Consult@example.com</a>
 								<a href="mailto:georgia.young@ple.com"
-									class="item-get-in-touch__email">georgia.young@ple.com</a>
+									class="item-get-in-touch__email">Consult@ple.com</a>
 							</div>
-							<div class="item-get-in-touch__label">Get Support</div>
-							<div class="item-get-in-touch__button">Submit Request</div>
+							<div class="item-get-in-touch__label">Узнать адрес</div>
+							<div class="item-get-in-touch__button">Отправить запрос</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!---------------------------------------------- 9 Блок ----------------------------------------------->
-		<!-- consulting не ограничен conteiner, поэтому его применяют. Работа над контейнером -->
 		<section class="page__consulting consulting">
 			<div class="consulting__container _container">
 				<div class="consulting__body">
 					<div class="consulting__content">
-						<h4 class="consulting__title">Consulting Agency For Your Business</h4>
-						<div class="consulting__text">the quick fox jumps over the lazy dog</div>
+						<h4 class="consulting__title">Консалтинговое агентство для вашего бизнеса</h4>
+						<div class="consulting__text">Наша специализация - консалтинговые услуги и аутсорсинг
+							бизнес-процессов.</div>
 					</div>
-					<a href="" class="consulting__button">Contact Us</a>
+					<a href="" class="consulting__button">Консультация</a>
 				</div>
 			</div>
 		</section>
@@ -389,77 +386,77 @@
 				<div class="footer__row">
 					<!--------------------------------- 1 Элемент -------------------------------->
 					<div class="footer__column">
-						<div class="footer__label">Company Info</div>
+						<div class="footer__label">О компании</div>
 						<div class="footer__menu menu-footer">
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">About Us</a>
+									<a href="" class="menu-footer__link">О нас</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Carrier</a>
+									<a href="" class="menu-footer__link">Партнеры</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">We are hiring</a>
+									<a href="" class="menu-footer__link">Мы нанимаем</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Blog</a>
+									<a href="" class="menu-footer__link">Блог</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<!--------------------------------- 2 Элемент -------------------------------->
 					<div class="footer__column">
-						<div class="footer__label">Legal</div>
+						<div class="footer__label">Юридический</div>
 						<div class="footer__menu menu-footer">
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">About Us</a>
+									<a href="" class="menu-footer__link">Услуги</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Carrier</a>
+									<a href="" class="menu-footer__link">Безопасность</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">We are hiring</a>
+									<a href="" class="menu-footer__link">Мы нанимаем</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Blog</a>
+									<a href="" class="menu-footer__link">Блог</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<!--------------------------------- 3 Элемент -------------------------------->
 					<div class="footer__column">
-						<div class="footer__label">Features</div>
+						<div class="footer__label">Функции</div>
 						<div class="footer__menu menu-footer">
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Business Marketing</a>
+									<a href="" class="menu-footer__link">Бизнес-маркетинг</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">User Analytic</a>
+									<a href="" class="menu-footer__link">Аналитика</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Live Chat</a>
+									<a href="" class="menu-footer__link">Живой чат</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Unlimited Support</a>
+									<a href="" class="menu-footer__link">Поддержка</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<!--------------------------------- 4 Элемент -------------------------------->
 					<div class="footer__column">
-						<div class="footer__label">Resources</div>
+						<div class="footer__label">Ресурсы</div>
 						<div class="footer__menu menu-footer">
 							<ul class="menu-footer__list">
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">IOS & Android</a>
+									<a href="" class="menu-footer__link">ios &Android</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Watch a Demo</a>
+									<a href="" class="menu-footer__link">Демонстрация</a>
 								</li>
 								<li class="menu-footer__item">
-									<a href="" class="menu-footer__link">Customers</a>
+									<a href="" class="menu-footer__link">Клиенты</a>
 								</li>
 								<li class="menu-footer__item">
 									<a href="" class="menu-footer__link">API</a>
@@ -469,14 +466,15 @@
 					</div>
 					<!--------------------------------- 5 Элемент -------------------------------->
 					<div class="footer__column">
-						<div class="footer__label">Get In Touch</div>
+						<div class="footer__label">Контакты</div>
 						<div class="footer__contacts contacts-footer">
 
 							<a href="tel:4805550103" class="contacts-footer__item contacts-footer__item_phone">(480)
 								555-0103</a>
-							<a href="" class="contacts-footer__item contacts-footer__item_map">4517 Washington Ave.</a>
+							<a href="https://goo.gl/maps/HmX9ybXcjSNrtCgR6" target="_blank"
+								class="contacts-footer__item contacts-footer__item_map">Москва</a>
 							<a href="mailto:debra.holt@example.com"
-								class="contacts-footer__item contacts-footer__item_email">debra.holt@example.com</a>
+								class="contacts-footer__item contacts-footer__item_email">Consult@example.com</a>
 
 						</div>
 					</div>
