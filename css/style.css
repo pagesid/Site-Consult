@@ -1,5 +1,4 @@
 /*Обнуление*/
-/* Обнуление */
 *,
 *::before,
 *::after {
@@ -46,15 +45,12 @@ body {
 	flex-direction: column;
 }
 
-/*Контейнер. Обрати внимание на подчеркивание*/
 /*----------------------------------------------------------------*/
 ._container {
-	/*border: 1px solid red;*/
 	max-width: 1046px;
 	margin: 0px auto;
-	/*Задаем отступы от краев браузера*/
 	padding: 0 15px;
-	/*Благодаря этому значению box-sizing к max-width как бы прибавляется padding */
+	/*Благодаря box-sizing к max-width как бы прибавляется padding */
 	box-sizing: content-box;
 }
 
@@ -78,6 +74,7 @@ body {
 	top: 0;
 	z-index: 50;
 }
+
 /*-----Контейнер в шапке----------------------------------------------------------*/
 
 .header__container {
@@ -107,7 +104,6 @@ body {
 /*Меню шапки*/
 .header__menu {
 	margin: 0px 0px 0px 132px;
-	/*border: 2px	solid greenyellow;*/
 }
 
 
@@ -143,9 +139,31 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 }
+@media (max-width: 480px) {
+	.menu__list {
+		margin-top: 20px;
+	}
+	
+}
+@media (max-width: 400px) {
+	.menu__list {
+		margin-top: 10px;
+		margin-left: 60px;
+	}
+	
+}
+
 .menu__item {
 	margin: 0 21px 0 0;
 	line-height: 23px;
+
+}
+
+@media (max-width: 400px) {
+	.menu__item {
+		flex: 1 1 50%;
+	}
+	
 }
 
 .menu__link {
@@ -162,17 +180,10 @@ body {
 		font-size: 17px;
 	}
 }
-@media (max-width: 340px) {
-	.menu__link {
-		margin: 0px -10px 0px 0px;
-	}
-}
 /*-----------PAGE-----------------------------------------------------------------------------*/
-/* ПРИ помощи Page задаем отступы. Отступы делаем только относительно элементов. */
+/* ПРИ помощи Page задаем отступы*/
 .page {
 	flex: 1 1 auto;
-}
-.page__main-block {
 }
 
 .page__services {
@@ -188,22 +199,6 @@ body {
 	.pade__achievements {
 		margin: 100px 0 0 0;
 	}
-}
-
-.page__howeare {
-	/*		border: solid 2px #000;
-*/
-}
-
-.page__clients {
-}
-
-.page__subscribe {
-}
-.page__get-in-touch {
-}
-
-.page__consulting {
 }
 
 /*-----------HEADER-----------------------------------------------------------------------------*/
@@ -233,6 +228,7 @@ body {
 }
 
 .header-block__subtitle {
+	padding: 0 65px;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 20px;
@@ -247,10 +243,6 @@ body {
 		font-size: 12px;
 	}
 }
-/*------------Footer-------------------------*/
-
-.footer {
-}
 
 /*------------MAIN-------------------------*/
 
@@ -259,14 +251,12 @@ body {
 }
 
 .main-block__body {
-	/*Расширяем паддингом размер фоновой картинки*/
 	padding: 184px 0 191px 0;
 	position: relative;
 	z-index: 2;
 	max-width: 400px;
-	/*border: 1px solid #000000;*/
 }
-/*Делаем практичные отступы. > - первого уровня. На "a" действовать не будет.*/
+
 .main-block__body > *:not(:last-child) {
 	margin: 0 0 35px 0;
 }
@@ -281,26 +271,29 @@ body {
 	font-size: 58px;
 	line-height: calc(80 / 58 * 100%);
 	font-weight: 800;
-	/*border: 1px solid #000000;*/
 	color: #252b42;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 615px) {
 	.main-block__title {
-		font-size: 42px;
+		font-size: 45px;
 	}
 }
-@media (max-width: 340px) {
+@media (max-width: 479px) {
 	.main-block__title {
-		font-size: 30px;
+		font-size: 35px;
+	}
+}
+@media (max-width: 400px) {
+	.main-block__title {
+		font-size: 25px;
+		padding-top: 50px;
 	}
 }
 
 .main-block__text {
 	font-size: 20px;
-	/*line-height: calc(80/58 * 100%);*/
 	font-weight: 500;
-	/*border: 1px solid #000000;*/
 	line-height: 123%;
 	color: #737373;
 }
@@ -317,8 +310,14 @@ body {
 
 .main-block__buttons {
 	display: flex;
-	flex-wrap: wrap;
 	margin: -10px 0;
+}
+
+@media (max-width: 530px) {
+	.main-block__buttons {
+		flex-wrap: wrap;
+
+	}
 }
 
 .main-block__button {
@@ -327,10 +326,10 @@ body {
 	line-height: 150%;
 	border-radius: 37px;
 	display: flex;
-	/*Отцентруем контент*/
 	justify-content: center;
 	align-items: center;
 	min-height: 48px;
+	min-width: 130px;
 	padding: 5px 36px;
 	text-align: center;
 	margin: 10px 0;
@@ -345,7 +344,8 @@ body {
 		margin-right: 10px;
 	}
 }
-@media (max-width: 479px) {
+
+@media (max-width: 420px) {
 	.main-block__button {
 		flex: 1 1 100%;
 		font-size: 18px;
@@ -463,13 +463,12 @@ body {
 .item-services-green {
 	background-color: #0d5c63;
 	color: #ffffff;
-	/*max-height: 222px; */
 }
 
 .item-services__title {
 	font-weight: 700;
 	font-size: 24px;
-	line-height: 20px;
+	line-height: 25px;
 	letter-spacing: 0.2px;
 }
 .item-services__text {
@@ -482,8 +481,6 @@ body {
 
 .achievements__body {
 	display: flex;
-	/*flex-wrap: wrap;*/
-	/*border: 1px solid #000;*/
 	margin: 0 0 0 -5px;
 }
 
@@ -509,6 +506,8 @@ body {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
+
+	padding-bottom: 10px;
 }
 .achievements__value {
 	font-weight: 700;
@@ -570,8 +569,8 @@ body {
 	justify-content: center;
 }
 .practice__column {
-	padding: 0 20px;
-	flex: 0 1 20%;
+	padding: 15px 15px;
+	flex: 0 1 40%;
 }
 
 @media (max-width: 1040px) {
@@ -589,14 +588,11 @@ body {
 }
 @media (max-width: 690px) {
 	.practice__column {
-		/*padding: 0 20px;*/
 		flex: 0 1 100%;
 		margin: 0 0 30px 0;
 	}
 }
 
-.practice__item {
-}
 
 .item-practice {
 	background-color: #ffffff;
@@ -606,8 +602,8 @@ body {
 }
 
 .item-practice__content {
-	padding: 30px 30px 10px 30px;
-	/*Благожаря флексу текст будет прижиматься вниз*/
+	padding: 30px 30px 5px 30px;
+	/*Cодержимое будет прижиматься вниз*/
 	flex: 1 1 auto;
 }
 
@@ -657,13 +653,13 @@ body {
 .item-practice__image {
 	display: block;
 	padding: 0px 0px 60% 0px;
+
 }
 
 /*------------------------------------------------5 блок-----------------------------------------------------*/
 
 .howeare {
 	padding: 80px 0 100px 0;
-	/*border: solid 5px #000;*/
 	background: #ffffff;
 }
 @media (max-width: 1040px) {
@@ -679,19 +675,16 @@ body {
 
 .howeare__header {
 	margin: 0 0 80px 0;
-	/*border: solid 5px #000;*/
 }
 
 .howeare__body {
 	display: flex;
 	align-items: flex-start;
-	/*border: solid 5px #000;*/
 }
 
 .howeare__video {
 	flex: 0 0 57%;
 	position: relative;
-	/*border: solid 1px #000;*/
 	padding: 0px 0px 42.25% 0px;
 }
 
@@ -706,7 +699,6 @@ body {
 
 .howeare__content {
 	padding: 0px 0px 0px 120px;
-	/*border: solid 1px #0260E8;*/
 }
 
 @media (max-width: 340px) {
@@ -743,24 +735,15 @@ body {
 	}
 }
 
-/*@media(max-width: 1030px){
-	.howeare__text {
-		text-align: center;
-	}
-}
-*/
-
 .howeare__top:not(last-child) {
 	margin: 0 0 50px 0;
 }
 
 .item-whoweare {
 	display: flex;
-	/*border: solid 1px #000;*/
 }
 
 .howeare__item {
-	/*	border: solid 1px #000;*/
 }
 
 .howeare__item:not(last-child) {
@@ -858,7 +841,6 @@ body {
 
 .clients {
 	padding: 30px 0 20px 0;
-	/*border: solid 1px #000;*/
 	text-align: center;
 }
 
@@ -907,7 +889,6 @@ body {
 
 .subscribe {
 	position: relative;
-	/*border: solid 1px #000;*/
 }
 .subscribe::before {
 	content: "";
@@ -917,7 +898,6 @@ body {
 	height: 60px;
 	left: 0;
 	background: #252b42;
-	/*border: solid 1px #000;*/
 }
 
 .subscribe__body {
@@ -925,14 +905,11 @@ body {
 	z-index: 2;
 	background: #17213c;
 	display: flex;
-	/*max-width: 996px;*/
-	padding: 10px 30px;
+	padding: 20px 30px;
 	justify-content: space-between;
 	align-items: center;
 	border-radius: 5px;
-	/*margin: -10px 0 0 0;*/
 	flex-wrap: wrap;
-	/* border: solid 1px #000; */
 }
 
 .subscribe__tilte {
@@ -942,8 +919,7 @@ body {
 	font-size: 20px;
 	line-height: 32px;
 	letter-spacing: 0.1 px;
-	max-width: 266px;
-	/* border: solid 1px #000; */
+	max-width: 280px;
 }
 
 .subscribe__form {
@@ -999,7 +975,6 @@ body {
 		display: flex;
 		flex: 0 1 70%;
 		justify-content: center;
-		/* height: 35px; */
 
 	}
 	.subscribe__tilte {
@@ -1186,23 +1161,17 @@ body {
 }
 
 /*------------------------------------- 9 Блок ---------------------------------------*/
-/* !consulting не ограничен conteiner, поэтому его применяют. Работа над контейнером ! */
 .consulting {
 	background-color: #fafafa;
 }
-.consulting__container {
-	/* border: solid 1px #000; */
-}
-/* .consulting__body - рамки всего тела */
+
 .consulting__body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px;
 }
-/* .consulting__content - рамки только текста , Без кнопки */
 .consulting__content {
-	/* border: solid 1px #000; */
 	padding: 0px 50px 0px 0px;
 }
 .consulting__title {
@@ -1248,8 +1217,6 @@ body {
 	border: solid 1px #ff7b47;
 }
 /*------------------------------------- Адаптив 9 Блок ---------------------------------------*/
-/*!max-width - до 798*/
-/*!min-width - после 798*/
 
 @media (max-width: 695px) {
 	.consulting__body {
@@ -1257,11 +1224,9 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
-		/* padding: 0 100px 0 0; */
 	}
 
 	.consulting__content {
-		/* border: solid 1px #000; */
 		padding: 0px 0px 0px 0px;
 		text-align: center;
 	}
@@ -1276,15 +1241,10 @@ body {
 	}
 }
 /*-------------------------------------  Подвал ---------------------------------------*/
-.footer {
-}
+
 .footer__top {
 	background: #17213c;
 	padding: 30px 0;
-}
-
-.footer__main {
-	
 }
 
 .footer__row{
@@ -1298,8 +1258,6 @@ body {
 	flex: 0 1 15%;
 }
 
-
-
 .footer__label {
 	color: #fff;
 	font-weight: 700;
@@ -1308,7 +1266,6 @@ body {
 	letter-spacing: 0.1px;
 	margin: 0px 0px 20px 0px;
 }
-
 
 .menu-footer__list {
 	font-size: 14px;
@@ -1333,9 +1290,6 @@ body {
 .menu-footer__link:hover {
 	text-decoration: underline;
 
-}
-
-.footer__contacts {
 }
 
 .contacts-footer {
@@ -1376,7 +1330,9 @@ body {
 }
 
 .footer__bottom {
-	padding: 25px 0px ;
+	padding: 25px 0 ;
+	padding-right: 170px;
+	padding-left: 130px;
 }
 
 .footer__container {
@@ -1390,7 +1346,6 @@ body {
 	}
 }
 
-
 .footer__copy {
 	font-weight: 600;
 	font-size: 14px;
@@ -1398,14 +1353,14 @@ body {
 	line-height: 150%;
 	letter-spacing: 0.2px;
 	color: #737373;
+	padding-right: 100px;
+
 }
 .footer__social {
 	display: flex;
 	align-items: center;
 }
 
-.social {
-}
 .social__item:not(:last-child) {
 	padding: 0px 20px 0px 0px;
 }
@@ -1414,7 +1369,6 @@ body {
 @media (max-width: 985px) {
 	.footer__column {
 		flex: 0 1 25%;
-		
 	}
 	.footer__row{
 		margin-left: 50px;
@@ -1423,17 +1377,12 @@ body {
 @media (max-width: 700px) {
 	.footer__column {
 		flex: 0 1 25%;
-		
-	}
-	.footer__row{
-		/* margin: 0; */
 	}
 }
 
 @media (max-width: 640px) {
 	.footer__column {
 		flex: 0 1 35%;
-		
 	}
 }
 
@@ -1441,21 +1390,10 @@ body {
 	.footer__row{
 		margin-left: 15px;
 	}
-	/* .footer__column {
-		flex: 0 1 30%;
-		
-	} */
 }
 
-@media (max-width: 767px) {
-	.footer__copy {
-		padding-bottom: 15px;
+@media (max-width: 810px) {
+	.footer__bottom {
+		display: none;
 	}
-} 
-
-@media (max-width: 400px) {
-	.footer__copy{
-		/* padding: 0px 15px; */
-		text-align: center;
-	}
-} 
+}
