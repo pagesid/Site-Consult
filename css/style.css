@@ -848,8 +848,8 @@ body {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	padding-left: 20px;
 	justify-content: center;
+	align-items: center;
 }
 .clients__item {
 	flex: 0 1 14%;
